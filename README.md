@@ -44,4 +44,4 @@ The project covers agriculture, irrigation, crops, plants, vertical farming, and
   Works beautifully on desktop and mobile.
 
 ---
--live link:https://github.com/Abdulrahman-Alhaleme/FoodSecure-main
+-live link:https://abdulrahman-alhaleme.github.io/FoodSecure-main/
