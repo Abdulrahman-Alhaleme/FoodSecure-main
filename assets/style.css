@@ -71,8 +71,8 @@ main { max-width: var(--container); margin: 0 auto; padding: 2rem 1.25rem }
   display: grid; grid-template-columns: 1.2fr 1fr; gap: 2.2rem; align-items: center; min-height: 60svh
 }
 .hero-img {
-  width: 100%; max-width: 520px; border-radius: 22px; border: 1px solid var(--line);
-  box-shadow: 0 30px 120px rgba(0,0,0,.3); object-fit: cover
+  width: 100%; max-width: 520px; border-radius: 22px; 
+   object-fit: cover
 }
 
 h1 { font-size: clamp(1.8rem, 4.5vw, 3.6rem); margin: .3rem 0 1rem; line-height: 1.08 }
@@ -359,3 +359,15 @@ html:not(.splashing) body > :not(#splash) { opacity: 1; }
   .splash-logo .gem { animation: none }
   .splash-bar span { animation: none; width: 60% }
 }
+.form-card{
+  background: linear-gradient(180deg, color-mix(in oklab, var(--card), transparent 20%), color-mix(in oklab, var(--card), transparent 5%));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: grid;
+  gap: .8rem;
+}
+.form-card label span{ display:block; margin-bottom:.35rem; color:var(--muted); font-size:.95rem }
+.form-card .agree{ display:flex; gap:.5rem; align-items:flex-start }
+.form-card .actions{ display:flex; flex-wrap:wrap; gap:.5rem; align-items:center }
+.btn.alt{ background: transparent; color: var(--ink); border: 1px solid var(--line) }

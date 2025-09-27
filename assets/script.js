@@ -493,3 +493,58 @@ function openItemModal(it){
   }
   splash.addEventListener('click', () => hideSplash());
 })();
+function initSuggestions(){
+  const form = document.getElementById('suggestForm');
+  const listWrap = document.querySelector('#suggestList tbody');
+  if(!form || !listWrap) return;
+
+  const KEY = 'fsj_suggestions';
+  const read = () => JSON.parse(localStorage.getItem(KEY) || '[]');
+  const write = (arr) => localStorage.setItem(KEY, JSON.stringify(arr));
+
+  function render(){
+    const arr = read().sort((a,b)=> b.time - a.time);
+    listWrap.innerHTML = arr.map(s => `
+      <tr>
+        <td>${new Date(s.time).toLocaleString()}</td>
+        <td><span class="badge">${s.topic}</span></td>
+        <td>${s.message.replace(/</g,'&lt;')}</td>
+        <td>${s.name ? s.name.replace(/</g,'&lt;') : ''}</td>
+      </tr>
+    `).join('') || `<tr><td colspan="4">No suggestions yet.</td></tr>`;
+  }
+
+  form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    const fd = new FormData(form);
+    const entry = {
+      time: Date.now(),
+      name: (fd.get('name')||'').trim(),
+      email: (fd.get('email')||'').trim(),
+      topic: fd.get('topic'),
+      message: (fd.get('message')||'').trim()
+    };
+    if(!entry.topic || !entry.message){ return; }
+    const arr = read();
+    arr.push(entry);
+    write(arr);
+    form.reset();
+    render();
+    openModal({ title: 'Thank you!', badges: [entry.topic], bodyHTML: '<p>Your suggestion was saved locally.</p>' });
+  });
+
+  document.getElementById('exportSuggestions')?.addEventListener('click', ()=>{
+    const data = read();
+    const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'suggestions.json'; a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  document.getElementById('clearSuggestions')?.addEventListener('click', ()=>{
+    write([]); render();
+  });
+
+  render();
+}

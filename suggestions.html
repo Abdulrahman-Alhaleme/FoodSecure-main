@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suggestions — FoodSecure Jordan</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <script>document.documentElement.classList.add('splashing');</script>
+</head>
+<body>
+  <div id="splash"><div class="splash-box"><div class="splash-logo"><span class="gem"></span><h1>FoodSecure Jordan</h1></div><div class="splash-sub">Loading…</div><div class="splash-bar"><span></span></div></div></div>
+  <div class="progress-wrap"><div id="progressBar"></div></div>
+
+  <header>
+    <nav class="nav">
+      <div class="brand"><span class="gem"></span><span>Suggestions</span></div>
+      <button class="menu-toggle" data-menu-toggle aria-label="Toggle menu">☰</button>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="agriculture.html">Agriculture</a>
+        <a href="irrigation.html">Irrigation</a>
+        <a href="crops.html">Crops</a>
+        <a href="plants.html">Plants</a>
+        <a href="vertical.html">Vertical Farming</a>
+        <a href="diseases.html">Plant Diseases</a>
+        <a href="suggestions.html">Suggestions</a>
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌓</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section data-animate>
+      <h2>Submit a suggestion</h2>
+      <p class="muted">Share ideas, notes, or feedback to improve food security content.</p>
+
+      <form id="suggestForm" class="form-card">
+        <div class="grid-2">
+          <label>
+            <span>Name (optional)</span>
+            <input class="input" name="name" placeholder="Your name">
+          </label>
+          <label>
+            <span>Email (optional)</span>
+            <input class="input" type="email" name="email" placeholder="you@example.com">
+          </label>
+        </div>
+
+        <label>
+          <span>Topic</span>
+          <select class="input" name="topic" required>
+            <option value="">Choose a topic</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="irrigation">Irrigation</option>
+            <option value="crops">Crops</option>
+            <option value="plants">Plants</option>
+            <option value="vertical">Vertical Farming</option>
+            <option value="diseases">Plant Diseases</option>
+            <option value="general">General</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Suggestion / Note</span>
+          <textarea class="input" name="message" rows="6" placeholder="Write your idea…" required></textarea>
+        </label>
+
+        <label class="agree">
+          <input type="checkbox" name="consent" required>
+          <span>I agree to store my suggestion locally in this browser.</span>
+        </label>
+
+        <div class="actions">
+          <button class="btn" type="submit">Submit</button>
+          <button class="btn alt" type="button" id="exportSuggestions">Export JSON</button>
+          <button class="btn alt" type="button" id="clearSuggestions">Clear Local</button>
+        </div>
+      </form>
+    </section>
+
+    <section data-animate>
+      <h2>Recent suggestions</h2>
+      <div id="suggestList" class="table-wrap">
+        <table class="table">
+          <thead><tr><th>Date</th><th>Topic</th><th>Message</th><th>Name</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 FoodSecure Jordan</footer>
+  <script src="assets/script.js"></script>
+  <script>
+    initSuggestions();
+  </script>
+</body>
+</html>
