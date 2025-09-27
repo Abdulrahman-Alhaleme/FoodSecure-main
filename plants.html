@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plants — Jordan</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="progress-wrap"><div id="progressBar"></div></div>
+  <header>
+    <nav class="nav">
+      <div class="brand"><span class="gem"></span> <span>Plants</span></div>
+      <button class="menu-toggle" data-menu-toggle aria-label="Toggle menu">☰</button>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="agriculture.html">Agriculture</a>
+        <a href="irrigation.html">Irrigation</a>
+        <a href="crops.html">Crops</a>
+        <a href="plants.html">Plants</a>
+        <a href="vertical.html">Vertical Farming</a>
+        <a href="diseases.html">Plant Diseases</a>
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌓</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section data-animate>
+      <h2>Plants in Jordan</h2>
+      <p class="muted">Browse native, ornamental, and useful plants.</p>
+      <div id="plantsFilter"></div>
+    </section>
+  </main>
+  <footer>© 2025 FoodSecure Jordan</footer>
+  <script src="assets/script.js"></script>
+  <script>
+    buildCardUI({containerId:'plantsFilter',dataPromise:loadData(),datasetKey:'plants'});
+  </script>
+</body>
+</html>

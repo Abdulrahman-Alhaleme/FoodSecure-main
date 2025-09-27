@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agriculture — Jordan</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="progress-wrap"><div id="progressBar"></div></div>
+
+  <header>
+    <nav class="nav">
+      <div class="brand"><span class="gem"></span> <span>Agriculture</span></div>
+      <button class="menu-toggle" data-menu-toggle aria-label="Toggle menu">☰</button>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="agriculture.html">Agriculture</a>
+        <a href="irrigation.html">Irrigation</a>
+        <a href="crops.html">Crops</a>
+        <a href="plants.html">Plants</a>
+        <a href="vertical.html">Vertical Farming</a>
+        <a href="diseases.html">Plant Diseases</a>
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌓</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 data-animate>Agriculture Statistics</h1>
+    <p data-animate>Distribution of agricultural types in Jordan (illustrative figures from <code>assets/data.json</code>).</p>
+
+    <div class="chart-box" data-animate>
+      <canvas id="agriChart"></canvas>
+    </div>
+  </main>
+
+  <footer>© 2025 FoodSecure Jordan</footer>
+
+  <script src="assets/script.js"></script>
+  <script>
+    loadData().then(data=>{
+      const labels = data.agriculture.types.map(t=>t.label);
+      const values = data.agriculture.types.map(t=>t.areaPercent);
+      const ctx = document.getElementById('agriChart').getContext('2d');
+      makeChart(ctx,{
+        type:'pie',
+        data:{
+          labels,
+          datasets:[{
+            data: values,
+            backgroundColor:['#10b981','#22d3ee','#6366f1']
+          }]
+        }
+      });
+    });
+  </script>
+</body>
+</html>

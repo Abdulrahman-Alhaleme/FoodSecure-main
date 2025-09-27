@@ -1,0 +1,2031 @@
+{
+  "agriculture": {
+    "types": [
+      {
+        "label": "Rain-fed Highlands",
+        "areaPercent": 35,
+        "notes": "Dominated by cereals, pulses, olives; high rainfall variability."
+      },
+      {
+        "label": "Irrigated (Jordan Valley)",
+        "areaPercent": 45,
+        "notes": "High-value fruits/vegetables; year-round production."
+      },
+      {
+        "label": "Desert/Protected Farming",
+        "areaPercent": 20,
+        "notes": "Greenhouses with drip irrigation in arid zones."
+      },
+      {
+        "label": "Pastoral/Rangeland",
+        "areaPercent": 10,
+        "notes": "Extensive grazing; low inputs; climate sensitive."
+      },
+      {
+        "label": "Urban/Peri-Urban Farming",
+        "areaPercent": 5,
+        "notes": "Rooftop and micro hydroponics."
+      },
+      {
+        "label": "Agroforestry Systems",
+        "areaPercent": 3,
+        "notes": "Tree-crop-livestock integration; soil conservation."
+      }
+    ]
+  },
+  "irrigation": {
+    "systems": [
+      {
+        "label": "Drip Irrigation",
+        "sharePercent": 60,
+        "notes": "High efficiency; fertigation ready."
+      },
+      {
+        "label": "Sprinkler Irrigation",
+        "sharePercent": 25,
+        "notes": "Orchards and cereals under control."
+      },
+      {
+        "label": "Surface Irrigation",
+        "sharePercent": 15,
+        "notes": "Traditional; losses via evaporation/percolation."
+      },
+      {
+        "label": "Treated Wastewater",
+        "sharePercent": 10,
+        "notes": "Reuse for forages; strict standards."
+      },
+      {
+        "label": "Rainwater Harvesting",
+        "sharePercent": 5,
+        "notes": "Micro-catchments/cisterns in semi-arid areas."
+      },
+      {
+        "label": "Groundwater Extraction",
+        "sharePercent": 20,
+        "notes": "Aquifer drawdown risk; regulated."
+      }
+    ]
+  },
+  "crops": [
+    {
+      "name": "Tomatoes",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Major export crop from the Jordan Valley and protected cultivation."
+    },
+    {
+      "name": "Cucumbers",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Year‑round in plastic tunnels and greenhouses."
+    },
+    {
+      "name": "Peppers",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Sweet and hot types; widely grown under protection."
+    },
+    {
+      "name": "Eggplant",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Greenhouse and open field."
+    },
+    {
+      "name": "Onions",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Dual season; stored for domestic markets."
+    },
+    {
+      "name": "Garlic",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Traditional kitchen staple; small to medium farms."
+    },
+    {
+      "name": "Potatoes",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Significant acreage in Mafraq and Irbid."
+    },
+    {
+      "name": "Carrots",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Irrigated plots with sandy loam soils."
+    },
+    {
+      "name": "Lettuce",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Protected hydroponics increasing in cities."
+    },
+    {
+      "name": "Spinach",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Cool‑season leaf crop."
+    },
+    {
+      "name": "Cabbage",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Open‑field in cooler highlands."
+    },
+    {
+      "name": "Cauliflower",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Cool‑season brassica."
+    },
+    {
+      "name": "Broccoli",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Gourmet market; protected cultivation."
+    },
+    {
+      "name": "Okra",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Heat tolerant; summer staple."
+    },
+    {
+      "name": "Zucchini",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "High yields in protected systems."
+    },
+    {
+      "name": "Beans (Green)",
+      "type": "legume",
+      "rarity": "common",
+      "notes": "Climbing and bush types; export potential."
+    },
+    {
+      "name": "Fava Beans",
+      "type": "legume",
+      "rarity": "niche",
+      "notes": "Traditional dish ingredient."
+    },
+    {
+      "name": "Chickpeas",
+      "type": "legume",
+      "rarity": "common",
+      "notes": "Rain‑fed pulse; resilient to dry spells."
+    },
+    {
+      "name": "Lentils",
+      "type": "legume",
+      "rarity": "common",
+      "notes": "Often intercropped with cereals."
+    },
+    {
+      "name": "Peas",
+      "type": "legume",
+      "rarity": "niche",
+      "notes": "Cool‑season pods for fresh markets."
+    },
+    {
+      "name": "Sweet Corn",
+      "type": "grain",
+      "rarity": "niche",
+      "notes": "Peri‑urban fresh markets."
+    },
+    {
+      "name": "Maize (Field)",
+      "type": "grain",
+      "rarity": "niche",
+      "notes": "Limited fodder production."
+    },
+    {
+      "name": "Wheat",
+      "type": "grain",
+      "rarity": "common",
+      "notes": "Staple; rain‑fed in the north."
+    },
+    {
+      "name": "Barley",
+      "type": "grain",
+      "rarity": "common",
+      "notes": "Primary animal feed; rain‑fed."
+    },
+    {
+      "name": "Sorghum",
+      "type": "grain",
+      "rarity": "niche",
+      "notes": "Drought‑tolerant fodder."
+    },
+    {
+      "name": "Millet",
+      "type": "grain",
+      "rarity": "rare",
+      "notes": "Trial plots in arid zones."
+    },
+    {
+      "name": "Quinoa",
+      "type": "grain",
+      "rarity": "rare",
+      "notes": "Introduced climate‑smart crop."
+    },
+    {
+      "name": "Amaranth (Grain)",
+      "type": "grain",
+      "rarity": "rare",
+      "notes": "Pilot in desert fringes."
+    },
+    {
+      "name": "Rice (Trial)",
+      "type": "grain",
+      "rarity": "rare",
+      "notes": "Experimental micro‑plots; water‑limited."
+    },
+    {
+      "name": "Pomegranates",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "High quality in north Jordan."
+    },
+    {
+      "name": "Grapes",
+      "type": "fruit",
+      "rarity": "common",
+      "notes": "Table and wine types in Madaba/Jerash."
+    },
+    {
+      "name": "Olives",
+      "type": "fruit",
+      "rarity": "common",
+      "notes": "11M+ trees; 80% for oil."
+    },
+    {
+      "name": "Figs",
+      "type": "fruit",
+      "rarity": "common",
+      "notes": "Backyard and orchard plantings."
+    },
+    {
+      "name": "Apples",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Highland microclimates."
+    },
+    {
+      "name": "Pears",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Limited chill hour niches."
+    },
+    {
+      "name": "Peaches",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Requires careful variety selection."
+    },
+    {
+      "name": "Nectarines",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Protected valleys."
+    },
+    {
+      "name": "Apricots",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Seasonal delicacy; frost risk."
+    },
+    {
+      "name": "Plums",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Highland orchards."
+    },
+    {
+      "name": "Cherries",
+      "type": "fruit",
+      "rarity": "rare",
+      "notes": "High chill; specialty growers."
+    },
+    {
+      "name": "Citrus (Oranges)",
+      "type": "fruit",
+      "rarity": "common",
+      "notes": "Jordan Valley groves."
+    },
+    {
+      "name": "Citrus (Lemons)",
+      "type": "fruit",
+      "rarity": "common",
+      "notes": "Fresh and processing."
+    },
+    {
+      "name": "Citrus (Mandarins)",
+      "type": "fruit",
+      "rarity": "common",
+      "notes": "Export potential."
+    },
+    {
+      "name": "Bananas",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Ghor Al‑Safi; water‑intensive."
+    },
+    {
+      "name": "Dates (Medjool)",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "High‑value export in south."
+    },
+    {
+      "name": "Strawberries",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Plastic tunnels; winter production."
+    },
+    {
+      "name": "Blueberries",
+      "type": "fruit",
+      "rarity": "rare",
+      "notes": "Soil/PH constraints; experimental."
+    },
+    {
+      "name": "Blackberries",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Protected trellis systems."
+    },
+    {
+      "name": "Raspberries",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Cooler sites with protection."
+    },
+    {
+      "name": "Watermelon",
+      "type": "fruit",
+      "rarity": "common",
+      "notes": "Summer irrigated fields."
+    },
+    {
+      "name": "Cantaloupe",
+      "type": "fruit",
+      "rarity": "common",
+      "notes": "Valley production for local markets."
+    },
+    {
+      "name": "Honeydew",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Desert greenhouses."
+    },
+    {
+      "name": "Papaya (Trial)",
+      "type": "fruit",
+      "rarity": "rare",
+      "notes": "Small pilot; heat tolerant but sensitive to cold."
+    },
+    {
+      "name": "Guava",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Warmer pockets in the Valley."
+    },
+    {
+      "name": "Avocado (Trial)",
+      "type": "fruit",
+      "rarity": "rare",
+      "notes": "Microclimates; high water demand."
+    },
+    {
+      "name": "Mango (Trial)",
+      "type": "fruit",
+      "rarity": "rare",
+      "notes": "Experimental in warmest sites."
+    },
+    {
+      "name": "Sesame",
+      "type": "oilseed",
+      "rarity": "niche",
+      "notes": "Dryland trial for tahini supply."
+    },
+    {
+      "name": "Sunflower",
+      "type": "oilseed",
+      "rarity": "niche",
+      "notes": "Smallholder rotations."
+    },
+    {
+      "name": "Canola (Rapeseed)",
+      "type": "oilseed",
+      "rarity": "rare",
+      "notes": "Research plots for rotation."
+    },
+    {
+      "name": "Groundnuts (Peanuts)",
+      "type": "legume",
+      "rarity": "rare",
+      "notes": "Sandy soils; limited tests."
+    },
+    {
+      "name": "Safflower",
+      "type": "oilseed",
+      "rarity": "rare",
+      "notes": "Arid‑adapted oilseed; trials."
+    },
+    {
+      "name": "Flax",
+      "type": "oilseed",
+      "rarity": "rare",
+      "notes": "Niche fiber/oil trials."
+    },
+    {
+      "name": "Coriander",
+      "type": "spice",
+      "rarity": "common",
+      "notes": "Culinary spice; small plots."
+    },
+    {
+      "name": "Cumin",
+      "type": "spice",
+      "rarity": "niche",
+      "notes": "Dry season spice crop."
+    },
+    {
+      "name": "Fennel",
+      "type": "spice",
+      "rarity": "niche",
+      "notes": "Herbal/seed spice."
+    },
+    {
+      "name": "Fenugreek",
+      "type": "spice",
+      "rarity": "common",
+      "notes": "Culinary and medicinal."
+    },
+    {
+      "name": "Anise",
+      "type": "spice",
+      "rarity": "niche",
+      "notes": "Seed spice for confectionery."
+    },
+    {
+      "name": "Cardamom (Greenhouse)",
+      "type": "spice",
+      "rarity": "rare",
+      "notes": "Experimental under protection."
+    },
+    {
+      "name": "Turmeric (Greenhouse)",
+      "type": "spice",
+      "rarity": "rare",
+      "notes": "High humidity requirement; trial."
+    },
+    {
+      "name": "Ginger (Greenhouse)",
+      "type": "spice",
+      "rarity": "rare",
+      "notes": "Protected hydroponic tests."
+    },
+    {
+      "name": "Basil",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Export herb; hydroponic."
+    },
+    {
+      "name": "Mint",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Tea and fresh use."
+    },
+    {
+      "name": "Parsley",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Culinary staple."
+    },
+    {
+      "name": "Cilantro",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Fresh bunches; peri‑urban."
+    },
+    {
+      "name": "Dill",
+      "type": "herb",
+      "rarity": "niche",
+      "notes": "Small niche growers."
+    },
+    {
+      "name": "Rosemary",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Drought tolerant; ornamental use too."
+    },
+    {
+      "name": "Thyme (Za’atar)",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Cultural staple; wild and cultivated."
+    },
+    {
+      "name": "Sage",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Medicinal and culinary."
+    },
+    {
+      "name": "Oregano",
+      "type": "herb",
+      "rarity": "niche",
+      "notes": "Culinary mixes."
+    },
+    {
+      "name": "Chives",
+      "type": "herb",
+      "rarity": "niche",
+      "notes": "Chef‑driven demand."
+    },
+    {
+      "name": "Aloe Vera",
+      "type": "herb",
+      "rarity": "niche",
+      "notes": "Cosmetic/medicinal."
+    },
+    {
+      "name": "Stevia",
+      "type": "herb",
+      "rarity": "rare",
+      "notes": "Natural sweetener; trials."
+    },
+    {
+      "name": "Alfalfa",
+      "type": "forage",
+      "rarity": "common",
+      "notes": "Fodder under irrigation/reuse water."
+    },
+    {
+      "name": "Clover",
+      "type": "forage",
+      "rarity": "niche",
+      "notes": "Cool‑season pasture."
+    },
+    {
+      "name": "Sudan Grass",
+      "type": "forage",
+      "rarity": "niche",
+      "notes": "Fast‑growing fodder."
+    },
+    {
+      "name": "Ryegrass",
+      "type": "forage",
+      "rarity": "niche",
+      "notes": "Cool‑season pasture mixes."
+    },
+    {
+      "name": "Beetroot",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Cold season; local markets."
+    },
+    {
+      "name": "Radish",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Quick crop; school gardens."
+    },
+    {
+      "name": "Turnip",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Traditional pickling."
+    },
+    {
+      "name": "Sweet Potato",
+      "type": "tuber",
+      "rarity": "niche",
+      "notes": "Warmer soils; trial expansion."
+    },
+    {
+      "name": "Cassava (Trial)",
+      "type": "tuber",
+      "rarity": "rare",
+      "notes": "Experimental only."
+    },
+    {
+      "name": "Yam (Trial)",
+      "type": "tuber",
+      "rarity": "rare",
+      "notes": "Experimental; not common."
+    },
+    {
+      "name": "Kale",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Chef demand; protected."
+    },
+    {
+      "name": "Swiss Chard",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Leafy greens category."
+    },
+    {
+      "name": "Arugula (Rocket)",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Fast turnover; salads."
+    },
+    {
+      "name": "Mustard Greens",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Leafy niche crop."
+    },
+    {
+      "name": "Leeks",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Cool season; gourmet."
+    },
+    {
+      "name": "Celery",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Protected cultivation."
+    },
+    {
+      "name": "Artichoke",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Mediterranean specialty."
+    },
+    {
+      "name": "Asparagus (Trial)",
+      "type": "vegetable",
+      "rarity": "rare",
+      "notes": "Perennial; pilot growers."
+    },
+    {
+      "name": "Mushrooms (Oyster)",
+      "type": "fungi",
+      "rarity": "niche",
+      "notes": "Urban containers; controlled rooms."
+    },
+    {
+      "name": "Mushrooms (Button)",
+      "type": "fungi",
+      "rarity": "niche",
+      "notes": "Climate control required."
+    },
+    {
+      "name": "Okra Red",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Colored variety for markets."
+    },
+    {
+      "name": "Cherry Tomatoes",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "High‑value truss types."
+    },
+    {
+      "name": "Heirloom Tomatoes",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Flavor‑focused varieties."
+    },
+    {
+      "name": "Bell Peppers (Colored)",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Export grade under glass."
+    },
+    {
+      "name": "Chili Peppers",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Fresh and dried markets."
+    },
+    {
+      "name": "Kohlrabi",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Cool season brassica."
+    },
+    {
+      "name": "Pak Choi",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Asian greens; hydroponic."
+    },
+    {
+      "name": "Bok Choy",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Asian greens; chef demand."
+    },
+    {
+      "name": "Chinese Cabbage",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Protected season crop."
+    },
+    {
+      "name": "Endive",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Salad mixes niche."
+    },
+    {
+      "name": "Romaine Lettuce",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Hydroponic heads."
+    },
+    {
+      "name": "Butterhead Lettuce",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Greenhouse hydroponics."
+    },
+    {
+      "name": "Iceberg Lettuce",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Cooler sites needed."
+    },
+    {
+      "name": "Microgreens Mix",
+      "type": "vegetable",
+      "rarity": "niche",
+      "notes": "Urban vertical farms."
+    },
+    {
+      "name": "Celeriac",
+      "type": "vegetable",
+      "rarity": "rare",
+      "notes": "Gourmet root crop."
+    },
+    {
+      "name": "Parsnip",
+      "type": "vegetable",
+      "rarity": "rare",
+      "notes": "Cool climate niche."
+    },
+    {
+      "name": "Horseradish",
+      "type": "vegetable",
+      "rarity": "rare",
+      "notes": "Spicy root; limited trials."
+    },
+    {
+      "name": "Tomato Roma",
+      "type": "fruit",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Tomato Beefsteak",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Tomato Plum",
+      "type": "legume",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Tomato Grape",
+      "type": "fruit",
+      "rarity": "rare",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Cucumber Persian",
+      "type": "tuber",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Pepper Jalapeño",
+      "type": "fungi",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Pepper Habanero",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Pepper Anaheim",
+      "type": "fruit",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Pepper Shishito",
+      "type": "legume",
+      "rarity": "rare",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Melon Galia",
+      "type": "fungi",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Melon Charentais",
+      "type": "tuber",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Melon Canary",
+      "type": "tuber",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Watermelon Seedless",
+      "type": "legume",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Grape Crimson",
+      "type": "fungi",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Grape Thompson",
+      "type": "vegetable",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Grape Black Pearl",
+      "type": "spice",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Olive Nabali",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Olive Rumi",
+      "type": "legume",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Olive Souri",
+      "type": "fruit",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Apple Gala",
+      "type": "spice",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Apple Fuji",
+      "type": "oilseed",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Apple Granny Smith",
+      "type": "fungi",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Peach Early Red",
+      "type": "vegetable",
+      "rarity": "rare",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Peach Late Gold",
+      "type": "forage",
+      "rarity": "rare",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Pear Conference",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Pear Packham",
+      "type": "fruit",
+      "rarity": "rare",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Strawberry Albion",
+      "type": "herb",
+      "rarity": "rare",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Strawberry Festival",
+      "type": "fungi",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Blueberry Duke",
+      "type": "fungi",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Blueberry Legacy",
+      "type": "fruit",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Basil Genovese",
+      "type": "legume",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Basil Thai",
+      "type": "fruit",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Mint Spearmint",
+      "type": "fruit",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Mint Peppermint",
+      "type": "herb",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Parsley Curly",
+      "type": "oilseed",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Parsley Flat‑leaf",
+      "type": "oilseed",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Cilantro Long‑standing",
+      "type": "legume",
+      "rarity": "rare",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Lettuce Red Oak",
+      "type": "herb",
+      "rarity": "rare",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Lettuce Green Oak",
+      "type": "fruit",
+      "rarity": "rare",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Lettuce Lollo Rosso",
+      "type": "grain",
+      "rarity": "rare",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Lettuce Frisee",
+      "type": "legume",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Kale Lacinato",
+      "type": "forage",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Kale Red Russian",
+      "type": "herb",
+      "rarity": "rare",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Spinach Baby Leaf",
+      "type": "tuber",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Spinach Savoy",
+      "type": "oilseed",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Wheat Durum",
+      "type": "legume",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Wheat Bread",
+      "type": "oilseed",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Barley Six‑row",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Barley Two‑row",
+      "type": "legume",
+      "rarity": "rare",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Chickpea Desi",
+      "type": "oilseed",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Chickpea Kabuli",
+      "type": "forage",
+      "rarity": "niche",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Lentil Red",
+      "type": "forage",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    },
+    {
+      "name": "Lentil Brown",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Varietal entry for market diversity."
+    }
+  ],
+  "plants": [
+    {
+      "name": "Jordanian Black Iris",
+      "type": "ornamental",
+      "rarity": "rare",
+      "notes": "National flower; protected habitats."
+    },
+    {
+      "name": "Wild Pistachio",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Ecologically important tree in Ajloun."
+    },
+    {
+      "name": "Quercus calliprinos (Kermes Oak)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Dominant highland species."
+    },
+    {
+      "name": "Capparis spinosa (Caper)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Edible buds; drought tolerant."
+    },
+    {
+      "name": "Acacia raddiana",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Desert wadi tree; fodder and shade."
+    },
+    {
+      "name": "Aloe vera",
+      "type": "herb",
+      "rarity": "niche",
+      "notes": "Medicinal succulent."
+    },
+    {
+      "name": "Thymus capitatus (Za’atar)",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Culinary and medicinal."
+    },
+    {
+      "name": "Salvia officinalis (Sage)",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Traditional remedy herb."
+    },
+    {
+      "name": "Rosmarinus officinalis (Rosemary)",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Aromatic shrub; drought hardy."
+    },
+    {
+      "name": "Mentha spicata (Spearmint)",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Tea and culinary mint."
+    },
+    {
+      "name": "Mentha piperita (Peppermint)",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Cooler microclimates."
+    },
+    {
+      "name": "Matricaria chamomilla (Chamomile)",
+      "type": "herb",
+      "rarity": "niche",
+      "notes": "Herbal teas and remedies."
+    },
+    {
+      "name": "Rhus coriaria (Sumac)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Spice from dried drupes."
+    },
+    {
+      "name": "Juniperus phoenicea (Phoenician Juniper)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Highland stands; slow growing."
+    },
+    {
+      "name": "Tamarix spp. (Tamarisk)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Salt‑tolerant riparian shrub."
+    },
+    {
+      "name": "Nerium oleander (Oleander)",
+      "type": "ornamental",
+      "rarity": "common",
+      "notes": "Urban landscaping; toxic if ingested."
+    },
+    {
+      "name": "Bougainvillea spp.",
+      "type": "ornamental",
+      "rarity": "common",
+      "notes": "Urban trellises; drought tolerant."
+    },
+    {
+      "name": "Hibiscus rosa‑sinensis",
+      "type": "ornamental",
+      "rarity": "niche",
+      "notes": "Garden hedges; warm areas."
+    },
+    {
+      "name": "Lavandula angustifolia (Lavender)",
+      "type": "herb",
+      "rarity": "niche",
+      "notes": "Aromatic; well‑drained soils."
+    },
+    {
+      "name": "Carthamus tinctorius (Safflower)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Dye/oil plant; arid adapted."
+    },
+    {
+      "name": "Retama raetam (White Broom)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Sand dune stabilizer."
+    },
+    {
+      "name": "Ziziphus spina‑christi (Christ’s Thorn Jujube)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Edible fruit; hardy tree."
+    },
+    {
+      "name": "Anabasis articulata",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Halophytic desert shrub."
+    },
+    {
+      "name": "Artemisia herba‑alba (White Wormwood)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Rangeland aromatic shrub."
+    },
+    {
+      "name": "Haloxylon persicum (Saxaul)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Severely arid zones; windbreaks."
+    },
+    {
+      "name": "Peganum harmala (Syrian Rue)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Ethnobotanical uses; caution advised."
+    },
+    {
+      "name": "Papaver rhoeas (Corn Poppy)",
+      "type": "ornamental",
+      "rarity": "niche",
+      "notes": "Spring wildflower displays."
+    },
+    {
+      "name": "Iris haynei",
+      "type": "ornamental",
+      "rarity": "rare",
+      "notes": "Regional iris; limited pockets."
+    },
+    {
+      "name": "Asphodelus microcarpus",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Mediterranean perennial."
+    },
+    {
+      "name": "Atriplex halimus (Saltbush)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Fodder on saline soils."
+    },
+    {
+      "name": "Cistus creticus (Rockrose)",
+      "type": "ornamental",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Cistus salviifolius",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Phlomis fruticosa (Jerusalem Sage)",
+      "type": "herb",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Euphorbia paralias",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Euphorbia peplus",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Euphorbia tirucalli",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Echinops adenocaulos (Globe Thistle)",
+      "type": "ornamental",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Centaurea cyanus (Cornflower)",
+      "type": "ornamental",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Anchusa azurea (Italian Bugloss)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Cyclamen persicum",
+      "type": "ornamental",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Iris germanica",
+      "type": "ornamental",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Iris atropurpurea",
+      "type": "ornamental",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Iris lortetii",
+      "type": "ornamental",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Iris petrana",
+      "type": "ornamental",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Dracaena draco (Dragon Tree)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Opuntia ficus‑indica (Prickly Pear)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Agave americana",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Yucca aloifolia",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Washingtonia robusta (Mexican Fan Palm)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Phoenix dactylifera (Date Palm)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Tamarindus indica (Tamarind)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Punica granatum (Pomegranate Tree)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Ficus carica (Fig Tree)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Ficus sycomorus (Sycamore Fig)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Morus alba (White Mulberry)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Morus nigra (Black Mulberry)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Acacia saligna",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Acacia seyal",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Prosopis juliflora (Mesquite)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Casuarina equisetifolia",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Eucalyptus camaldulensis",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Schinus molle (Pepper Tree)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Pistacia atlantica",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Pistacia palaestina",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Ceratonia siliqua (Carob)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Cupressus sempervirens (Cypress)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Pinus halepensis (Aleppo Pine)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Pinus pinea (Stone Pine)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Arbutus andrachne (Strawberry Tree)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Laurus nobilis (Bay Laurel)",
+      "type": "herb",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Physalis peruviana (Cape Gooseberry)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Passiflora edulis (Passionflower)",
+      "type": "ornamental",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Jasminum officinale (Jasmine)",
+      "type": "ornamental",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Rosa damascena (Damask Rose)",
+      "type": "ornamental",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Pelargonium graveolens (Scented Geranium)",
+      "type": "ornamental",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Nasturtium officinale (Watercress)",
+      "type": "riparian",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Portulaca oleracea (Purslane)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Malva sylvestris (Mallow)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Borago officinalis (Borage)",
+      "type": "herb",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Nigella sativa (Black Seed)",
+      "type": "herb",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Foeniculum vulgare (Fennel)",
+      "type": "herb",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Cuminum cyminum (Cumin)",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Coriandrum sativum (Coriander)",
+      "type": "herb",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Origanum syriacum",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Satureja thymbra (Savory)",
+      "type": "herb",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Helichrysum italicum (Curry Plant)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Calendula officinalis (Marigold)",
+      "type": "ornamental",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Tagetes erecta (African Marigold)",
+      "type": "ornamental",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Antirrhinum majus (Snapdragon)",
+      "type": "ornamental",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Lathyrus odoratus (Sweet Pea)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Datura innoxia",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Solanum nigrum",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Nicotiana glauca (Tree Tobacco)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Withania somnifera (Ashwagandha)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Hyoscyamus niger (Henbane)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Urtica dioica (Stinging Nettle)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Parietaria judaica (Wall Pellitory)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Allium ursinum (Wild Garlic)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Allium neapolitanum",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Crithmum maritimum (Rock Samphire)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Atriplex canescens",
+      "type": "halophyte",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Suaeda fruticosa",
+      "type": "halophyte",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Salicornia europaea (Glasswort)",
+      "type": "halophyte",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Limonium sinuatum (Sea Lavender)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Ferula communis (Giant Fennel)",
+      "type": "herb",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Nerium oleander (variegated)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Bougainvillea glabra (Purple)",
+      "type": "ornamental",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Bougainvillea spectabilis (Magenta)",
+      "type": "ornamental",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Lavatera trimestris",
+      "type": "ornamental",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Hordeum spontaneum (Wild Barley)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Triticum dicoccoides (Wild Emmer)",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Aegilops speltoides",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Arundo donax (Giant Reed)",
+      "type": "riparian",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Phragmites australis (Common Reed)",
+      "type": "riparian",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Typha domingensis (Cattail)",
+      "type": "riparian",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Juncus acutus (Rush)",
+      "type": "riparian",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Iris pseudacorus (Yellow Flag)",
+      "type": "ornamental",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Nymphaea alba (Water Lily)",
+      "type": "riparian",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Ceratophyllum demersum (Hornwort)",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Zostera noltii (Seagrass, if coastal)",
+      "type": "riparian",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Salsola soda",
+      "type": "halophyte",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Silybum marianum (Milk Thistle)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Echinacea purpurea",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Sedum spurium",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Sempervivum tectorum (Houseleek)",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Expanded flora entry for Jordan/ecoregion context."
+    },
+    {
+      "name": "Native Species 126",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 127",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 128",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 129",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 130",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 131",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 132",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 133",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 134",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 135",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 136",
+      "type": "native",
+      "rarity": "rare",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 137",
+      "type": "native",
+      "rarity": "niche",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 138",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 139",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    },
+    {
+      "name": "Native Species 140",
+      "type": "native",
+      "rarity": "common",
+      "notes": "Placeholder expanded entry for dataset scaling."
+    }
+  ],
+  "verticalFarming": {
+    "benefits": [
+      "Up to 90% less water than traditional farming",
+      "Year-round climate independence and consistent quality",
+      "Reduced pesticide use via controlled environments",
+      "Urban proximity cuts transport losses",
+      "Stacked production increases yield per m²",
+      "Potential coupling with solar energy and storage"
+    ],
+    "challenges": [
+      "High energy demand for lighting/HVAC",
+      "Significant capital expenditure and O&M skills",
+      "Currently limited mainly to leafy greens/herbs",
+      "Market acceptance and price sensitivity",
+      "Supply chain for substrates and nutrients"
+    ],
+    "examples": [
+      "Hydroponic lettuce and basil in Amman rooftops",
+      "Aquaponics pilots integrating tilapia with greens",
+      "Container farms near universities and hospitals",
+      "Herb export facilities experimenting with LEDs"
+    ]
+  },
+  "plantDiseases": [
+    {
+      "name": "Powdery Mildew",
+      "crop": "Tomatoes, Cucumbers",
+      "type": "fungal",
+      "notes": "White mycelial growth; sulfur/biocontrol options."
+    },
+    {
+      "name": "Downy Mildew",
+      "crop": "Cucurbits, Grapes",
+      "type": "fungal",
+      "notes": "Angular leaf spots; requires humidity management."
+    },
+    {
+      "name": "Botrytis (Gray Mold)",
+      "crop": "Tomato, Strawberry",
+      "type": "fungal",
+      "notes": "Wounds and humidity favor outbreaks."
+    },
+    {
+      "name": "Verticillium Wilt",
+      "crop": "Olives, Solanaceae",
+      "type": "fungal",
+      "notes": "Soil-borne; sanitation and rotation needed."
+    },
+    {
+      "name": "Fusarium Wilt",
+      "crop": "Tomato, Banana",
+      "type": "fungal",
+      "notes": "Vascular browning; resistant cultivars key."
+    },
+    {
+      "name": "Bacterial Leaf Spot",
+      "crop": "Pepper",
+      "type": "bacterial",
+      "notes": "Seed sanitation and copper programs."
+    },
+    {
+      "name": "Olive Knot",
+      "crop": "Olive",
+      "type": "bacterial",
+      "notes": "Prune in dry weather; disinfection crucial."
+    },
+    {
+      "name": "TYLCV",
+      "crop": "Tomato",
+      "type": "viral",
+      "notes": "Whitefly vector control and resistant varieties."
+    },
+    {
+      "name": "CMV/WMV",
+      "crop": "Cucurbits",
+      "type": "viral",
+      "notes": "Aphid-vectored; weed host management."
+    },
+    {
+      "name": "Rusts",
+      "crop": "Wheat, Barley",
+      "type": "fungal",
+      "notes": "Stripe/leaf/stem rust surveillance and varietal resistance."
+    }
+  ]
+}
