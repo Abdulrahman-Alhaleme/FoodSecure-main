@@ -104,6 +104,24 @@ p { color: var(--muted); line-height: 1.7; font-size: clamp(1rem, 1.6vw, 1.1rem)
 .table { width: 100%; border-collapse: separate; border-spacing: 0 8px; margin: 0 }
 .table tr { background: color-mix(in oklab, var(--card), transparent 15%); border: 1px solid var(--line) }
 .table td, .table th { padding: .7rem 1rem; white-space: nowrap; }
+select, option {
+  background: var(--card);
+  color: var(--ink);
+}
+select {
+  background: var(--card);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: .7rem .8rem;
+  appearance: none; 
+}
+
+option {
+  background: var(--card);
+  color: var(--ink);
+}
+
 
 .chart-box { width: 100%; aspect-ratio: 16 / 9; min-height: 260px; }
 .chart-box canvas { width: 100% !important; height: 100% !important; }
